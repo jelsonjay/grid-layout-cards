@@ -5,25 +5,26 @@
 }
 :root {
 	--clr-bg: hsl(6, 0%, 95%);
-	--clr-sidebar: hsla(219, 78%, 28%, 0.568);
 	--clr-black: hsl(1, 5%, 10%);
-	--clr-Orange: hsl(16, 100%, 66%);
 	--clr-Green: hsl(166, 89%, 52%);
 	--clr-gray: hsl(0, 0%, 80%);
 	--clr-white: hsl(1, 5%, 95%);
-	--clr-blue: hsl(210, 45%, 72%);
+	--clr-blue: #031f54;
 	--clr-skyblue: hsl(197, 71%, 83%);
-	--clr-font: #cfcfcf;
-	--clr-font-primary: #48556a;
+	--clr-font-primary: hsl(16, 100%, 66%);
 }
 body {
 	font-family: 'Times New Roman', Times, serif;
 	background-color: var(--clr-bg);
 }
+h1 {
+	text-align: center;
+	padding: 20px;
+}
 .container {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(20rem, auto));
-	gap: 10px;
+	gap: 20px;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 50px;
@@ -43,16 +44,20 @@ body {
 }
 .content h4 {
 	padding: 0.5rem;
-	font-size: 1.25rem;
+	font-size: 0.9rem;
 	opacity: 0.8;
 	color: var(--clr-font-primary);
 	text-transform: capitalize;
 }
-.content h2 {
+.content a {
 	padding: 0.5rem;
 	font-size: 1.5rem;
-	opacity: 0.8;
-	color: var(--clr-font-primary);
+	text-decoration: none;
+	color: var(--clr-black);
+	font-weight: 400;
+}
+.content a:hover {
+	color: var(--clr-blue);
 }
 .content p {
 	padding: 0.5rem;
@@ -64,4 +69,5 @@ body {
 	justify-content: space-between;
 	padding: 1rem;
 	cursor: pointer;
+	color: var(--clr-font-primary);
 }
